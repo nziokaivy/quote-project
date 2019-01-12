@@ -5,12 +5,16 @@
 </div>
 <h2>Recent Quotes</h2>
 <ul>
-  <li *ngFor="let quote of quotes">
+  <li *ngFor="let quote of quotes" ;let i = index>
   <h5>{{quote.id}} <br>{{quote.quote}}</h5>
   <p *ngIf="showDescription">{{quote.author}}<br>{{quote.submitter}}</p>
 </li>
 </ul>
 
-<button type="button" (click)="toggleQuote()">Show Details
+<button (click)="toggleQuote()">Show Details
+
+</button>
+
+<button (click)="deleteQuote(i)">Delete Quote
 
 </button>

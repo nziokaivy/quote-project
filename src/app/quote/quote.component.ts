@@ -19,7 +19,7 @@ export class QuoteComponent implements OnInit {
   toggleQuote() {
     this.showDescription =! this.showDescription;
   }
-  deleteQuote() {
+  deleteQuote(i) {
     this.quotes.splice(i,1);
   }
   constructor() { }

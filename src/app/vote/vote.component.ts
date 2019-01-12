@@ -12,10 +12,10 @@ export class VoteComponent implements OnInit {
   downVotes=0;
 
   UpVote() {
-    this.upVotes = this.upVotes +1; 
+    this.upVotes = this.upVotes + 1; 
   }
-  DownVote(i) {
-    this.downVotes = this.downVotes +1;
+  DownVote() {
+    this.downVotes = this.downVotes + 1;
   }
 
   constructor() { }

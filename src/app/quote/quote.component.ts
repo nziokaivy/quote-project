@@ -14,6 +14,12 @@ export class QuoteComponent implements OnInit {
     new Quote(3, "lorem ipsum is lit", "Ivy", "Dami"),
   ]
 
+  showDescription= false;
+
+  toggleQuote() {
+    this.showDescription =! this.showDescription;
+  }
+
   constructor() { }
 
   ngOnInit() {

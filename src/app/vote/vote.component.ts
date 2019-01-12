@@ -6,6 +6,17 @@ import { Quote } from '../quotes';
   styleUrls: ['./vote.component.css']
 })
 export class VoteComponent implements OnInit {
+  @Output () isComplete = new EventEmitter<boolean>();
+
+  upVotes=0;
+  downVotes=0;
+
+  UpVote() {
+    this.upVotes = this.upVotes +1; 
+  }
+  DownVote(i) {
+    this.downVotes = this.downVotes +1;
+  }
 
   constructor() { }
 

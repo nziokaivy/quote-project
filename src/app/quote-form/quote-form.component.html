@@ -1,5 +1,5 @@
 <h2>Add New Quote</h2>
-<form>
+<form (ngSubmit)="submitQuote()">
   <label>
     New Quote:
   </label>
@@ -19,7 +19,7 @@
   <input type="text" placeholder="Submitted by">
 </input>
 
-<button type="submit" (click)="submitQuote()">Submit Quote
+<button type="submit">Submit Quote
 
 </button>
 </form>

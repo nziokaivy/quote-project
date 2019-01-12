@@ -19,7 +19,9 @@ export class QuoteComponent implements OnInit {
   toggleQuote() {
     this.showDescription =! this.showDescription;
   }
-
+  deleteQuote() {
+    this.quotes.splice(i,1);
+  }
   constructor() { }
 
   ngOnInit() {

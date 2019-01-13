@@ -1,4 +1,5 @@
 export class Quote {
+    
     showDescription = false;
     
     constructor(

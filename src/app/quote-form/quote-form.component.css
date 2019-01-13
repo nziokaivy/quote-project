@@ -2,6 +2,12 @@
     float: right;
 } */
 
+#formtitle {
+    font-size: 30px;
+    padding-bottom: 25px;
+    
+}
+
 input[type=text], select {
     width: 40%;
     padding: 15px 20px;

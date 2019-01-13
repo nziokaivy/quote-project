@@ -14,9 +14,9 @@ export class QuoteComponent implements OnInit {
   } 
   
   quotes = [
-    new Quote(1, "lorem ipsum is real", "Ivy", "Dami"),
-    new Quote(2, "lorem ipsum is no lie", "Ivy", "Dami"),
-    new Quote(3, "lorem ipsum is lit", "Ivy", "Dami"),
+    new Quote(1, "lorem ipsum is real", "Ivy", "Dami", new Date(2011, 3, 4)),
+    new Quote(2, "lorem ipsum is no lie", "Ivy", "Dami", new Date(2012, 3, 4)),
+    new Quote(3, "lorem ipsum is lit", "Ivy", "Dami", new Date(2013, 3, 4)),
   ]
 
   showDescription = false;

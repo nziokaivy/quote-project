@@ -10,7 +10,7 @@ import { Quote } from '../quotes';
 
 export class QuoteComponent implements OnInit {
   ngOnInit(): void {
-    throw new Error("Method not implemented.");
+
   } 
   
   quotes = [
@@ -22,8 +22,13 @@ export class QuoteComponent implements OnInit {
   showDescription = false;
 
   addNewQuote(quote) {
+    let quoteLength = this.quotes.length;
+    quote.id = quoteLength + 1;
+    quote.completeDate = new Date(quote.completeDate)
     this.quotes.push(quote);
   }
+
+  
 
   toggleQuote() {
     this.showDescription =! this.showDescription;

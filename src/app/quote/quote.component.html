@@ -1,19 +1,19 @@
 <div>
-  <h1>Tech Quotes!</h1>
+  <h1>Tech Quotes</h1>
 </div>
-
+<div>
 <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
-<div>
-  <ul>
-    <li *ngFor="let quote of quotes" ;let i=index>
-      <p *ngIf="showDescription">{{quote.quote}}</p>
-    </li>
-  </ul>
+
 </div>
-<div>
+  <div *ngFor="let quote of quotes" ;let i=index>
+      <p *ngIf="showDescription">{{quote.quote}}</p>
+  </div>
 <br>
+
   <button (click)="toggleQuote()">{{showDescription? "Hide": "Show"}} Details</button>
-<h4> {{quote.quote}}</h4>
+<div>
+  <p id="{{id}}">{{quote.author}}</p>
+</div>
 <div *ngIf="showDescription">
   <app-vote></app-vote>
 
@@ -25,5 +25,4 @@
 
 <div>
   <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-</div>
 </div>

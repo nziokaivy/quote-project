@@ -8,7 +8,10 @@ import { Quote } from '../quotes';
   styleUrls: ['./quote.component.css']
 })
 
-export class QuoteComponent implements OnInit { 
+export class QuoteComponent implements OnInit {
+  ngOnInit(): void {
+    throw new Error("Method not implemented.");
+  } 
   
   quotes = [
     new Quote(1, "lorem ipsum is real", "Ivy", "Dami"),
@@ -25,13 +28,21 @@ export class QuoteComponent implements OnInit {
   toggleQuote() {
     this.showDescription =! this.showDescription;
   }
-  deleteQuote(i) {
-      this.quotes.splice(i, 1)
-    }
-    
-  constructor() { }
 
-  ngOnInit() {
+  deleteQuote(isComplete,index){
+    if (isComplete){
+        let toDelete=confirm(`Are you sure you want to delete ${this.quotes[index].quote}`)
+        
+        if(toDelete){
+            this.quotes.splice(index,1)
+        }
+    }
+
+  
+
+  this.ngOnInit(), {
+
   }
 
+  }
 }

@@ -1,20 +1,29 @@
 <div>
-  <h1>
-  Tech Quotes!
-</h1>
+  <h1>Tech Quotes!</h1>
 </div>
-<h2>Recent Quotes</h2>
 
-<app-quote-form >(addQuote)="addQuote($event)"></app-quote-form>
-<ul>
-  <li *ngFor="let quote of quotes" ;let i = index>
-  <h5>{{quote.id}} <br>{{quote.quote}}</h5>
-  <p *ngIf="showDescription">{{quote.author}}<br>{{quote.submitter}}</p>
-</li>
-</ul>
+<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+<div>
+  <ul>
+    <li *ngFor="let quote of quotes" ;let i=index>
+      <p *ngIf="showDescription">{{quote.quote}}</p>
+    </li>
+  </ul>
 </div>
-<button (click)="toggleQuote()">Show Details
+<div>
+<br>
+  <button (click)="toggleQuote()">{{showDescription? "Hide": "Show"}} Details</button>
+<h4> {{quote.quote}}</h4>
+<div *ngIf="showDescription">
+  <app-vote></app-vote>
 
-</button>
+</div>
+<div>
+  <p>Submittted By {{quote.submitter}}</p>
+</div>
 
 
+<div>
+  <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+</div>
+</div>

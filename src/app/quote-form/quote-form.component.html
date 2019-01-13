@@ -1,25 +1,25 @@
-<h2>Add New Quote</h2>
-<form (ngSubmit)="submitQuote()">
-  <label>
-    New Quote:
-  </label>
-  <textarea type="text" placeholder="Add new Quote">
-
-  </textarea> 
-
-  <label>
+<div>
+  <h2>Add New Quote</h2>
+  <form (ngSubmit)="submitQuote()" #f="ngForm">
+    <label>
+      New Quote:
+    </label><br>
+    <textarea type="text" id="quote" placeholder="Add new Quote" [(ngModel)]="newQuote.quote"></textarea>
+    <br><br>
+    <label>
       Author's Name:
-    </label>
-    <input type="text" placeholder="Add author's name">
-  </input>
+    </label><br>
+    <input type="text" id="author" placeholder="Add author's name" [(ngModel)]="newQuote.author">
+    <br><br>
 
-  <label>
-    Submitted By:
-  </label>
-  <input type="text" placeholder="Submitted by">
-</input>
+    <label>
+      Submitted By:
+    </label><br>
+    <input type="text" id="submitter" placeholder="Submitted by" [(ngModel)]="newQuote.submitter">
+    <br>
+    <br>
+    <br>
 
-<button type="submit">Submit Quote
-
-</button>
-</form>
+    <button type="submit">Submit Quote</button>
+  </form>
+</div>

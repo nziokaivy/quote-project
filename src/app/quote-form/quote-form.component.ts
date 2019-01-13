@@ -8,7 +8,7 @@ import { FormsModule } from '@angular/forms';
   styleUrls: ['./quote-form.component.css']
 })
 export class QuoteFormComponent implements OnInit {
-  newQuote = new Quote(0, "", "", "");
+  newQuote = new Quote(0, "", "", "", "");
 
   @Output() addQuote = new EventEmitter<Quote>();
 

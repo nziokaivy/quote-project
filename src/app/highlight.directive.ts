@@ -4,15 +4,12 @@ import { Directive, ElementRef, Input, HostListener, Host } from '@angular/core'
   selector: '[appHighlight]'
 })
 export class HighlightDirective {
+  elem: any;
 
-  constructor(private elem: ElementRef) { }
-@HostListener("click") Upvote() {
-  this.highlight("highlight")
-}
-@HostListener("dblclick") onDoubleClick() {
-  this.highlight("highlight")
-} 
-private highlight(highlight: string) {
-  this.elem.nativeElement.style.backgroundColor = 'red';
-}
+  constructor(el: ElementRef) {
+      this.elem.nativeElement.style.backgroundColor = 'red';
+    
+   }
+
+
 }

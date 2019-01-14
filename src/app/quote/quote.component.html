@@ -1,28 +1,33 @@
-<div>
-  <h1>Tech Quotes</h1>
-</div>
-<div>
-<app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
 
+<div class="quoteslist">
+<div>
+  <h1>Previous Quotes</h1>
 </div>
-  <div *ngFor="let quote of quotes" ;let i=index>
-      <p *ngIf="showDescription">{{quote.quote}}</p>
-  </div>
 <br>
+  <div *ngFor="let quote of quotes ,let i=index">
+     
+      <p>{{quote.quote}}</p>
+      <p *ngIf="showDescription">{{quote.author}}</p>
+      <button (click)="toggleQuote()" id="details">{{showDescription? "Hide": "Show"}} Details</button>
+      <div *ngIf="showDescription">
+        <app-vote></app-vote>  
+      </div>
+      
+      <div *ngIf="showDescription">
+          <p>{{quote.completeDate|date}} days ago, Submittted By {{quote.submitter}}</p>
+        </div>
+      <div *ngIf="showDescription">
+        <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
+      </div>
+    </div>
+            
+    </div>
+  
+    <div>
+        <h1>Tech Quotes</h1>  
+      <app-quote-form (addQuote)="addNewQuote($event)"></app-quote-form>
+        
+        </div>
+  
 
-  <button (click)="toggleQuote()">{{showDescription? "Hide": "Show"}} Details</button>
-<div>
-  <p id="{{id}}">{{quote.author}}</p>
-</div>
-<div *ngIf="showDescription">
-  <app-vote></app-vote>
-
-</div>
-<div>
-  <p>{{quote.completeDate|date}} days ago, Submittted By {{quote.submitter}}</p>
-</div>
-
-
-<div>
-  <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>
-</div>
+  

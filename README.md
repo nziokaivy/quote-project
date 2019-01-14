@@ -1,10 +1,38 @@
-# QuoteProject
+## Tech Quotes App
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.1.4.
+#### This is a simple web application for posting quotes.
+
+#### By **Ivy Nzioka**
+
+## Description
+
+#### This is a simple web application built on angular that allows the user to view previous quotes and vote or delete and add a new quote of their liking. 
+
+## Setup/Installations
+
+#### Both the CLI and generated project have dependencies that require Node 8.9 or higher, together with NPM 5.5.1 or higher so one has to install node and angular CLI.
 
 ## Development server
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+#### Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+
+
+## Technologies Used
+* Angular
+* HTML
+* CSS
+
+## Support and contact details
+#### If you have any issues feel free to contact me at nziokaivy@gmail.com
+
+## License
+#### MIT License. Copyright (c) 2018 Ivy Nzioka  
+
+
+
+
+
+
 
 ## Code scaffolding
 
@@ -22,6 +50,3 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).

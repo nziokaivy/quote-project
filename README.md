@@ -1,23 +1,23 @@
 ## Tech Quotes App
 
-##### This is a simple web application for posting quotes.
+This is a simple web application for posting quotes.
 
 #### By **Ivy Nzioka**
 
 ## Description
 
-##### This is a simple web application built on angular that allows the user to view previous quotes and vote or delete and add a new quote of their liking.
+This is a simple web application built on angular that allows the user to view previous quotes and vote or delete and add a new quote of their liking.
 
 ## Deployed page
-##### Find link to deployed page [here](https://nziokaivy.github.io/quote-project/)
+Find link to deployed page [here](https://nziokaivy.github.io/quote-project/)
 
 ## Setup/Installations
 
-##### Both the CLI and generated project have dependencies that require Node 8.9 or higher, together with NPM 5.5.1 or higher so one has to install node and angular CLI.
+Both the CLI and generated project have dependencies that require Node 8.9 or higher, together with NPM 5.5.1 or higher so one has to install node and angular CLI.
 
 ## Development server
 
-##### Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
 
 
 ## Technologies Used
@@ -26,10 +26,10 @@
 * CSS
 
 ## Support and contact details
-##### If you have any issues feel free to contact me at nziokaivy@gmail.com
+If you have any issues feel free to contact me at nziokaivy@gmail.com
 
 ## License
-##### MIT License. Copyright (c) 2018 Ivy Nzioka  
+MIT License. Copyright (c) 2018 Ivy Nzioka  
 
 
 

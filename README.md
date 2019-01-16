@@ -28,17 +28,6 @@ Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app w
 ## Support and contact details
 If you have any issues feel free to contact me at nziokaivy@gmail.com
 
-## License
-<<<<<<< HEAD
-=======
-MIT License. Copyright (c) 2018 Ivy Nzioka  
-
-
-
-
->>>>>>> f3bded63774d9ce68107493ef237bcd67d13dc3e
-
-##### MIT License. Copyright (c) 2018 Ivy Nzioka  
 
 
 ## Code scaffolding
@@ -57,3 +46,8 @@ Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.
 
 Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
 
+
+## License
+MIT License. Copyright (c) 2018 Ivy Nzioka  
+
+ 

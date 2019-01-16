@@ -5,27 +5,27 @@
     <label>
       New Quote:
     </label><br>
-    <textarea type="text" id="quote" placeholder="Add new Quote" [(ngModel)]="newQuote.quote"></textarea>
+    <textarea type="text" id="quote" placeholder="Add new Quote" [(ngModel)]="newQuote.quote" [ngModelOptions]="{standalone: true}"></textarea>
     
 
     <br><br>
     <label>
       Author's Name:
     </label><br>
-    <input type="text" id="author" placeholder="Add author's name" [(ngModel)]="newQuote.author">
+    <input type="text" id="author" placeholder="Add author's name" [(ngModel)]="newQuote.author" [ngModelOptions]="{standalone: true}">
     <br><br>
 
     <label>
       Submitted By:
     </label><br>
-    <input type="text" id="submitter" placeholder="Submitted by" [(ngModel)]="newQuote.submitter">
+    <input type="text" id="submitter" placeholder="Submitted by" [(ngModel)]="newQuote.submitter" [ngModelOptions]="{standalone: true}">
     <br>
     <br>
 
     <label>
       Submitted On:
     </label><br>
-    <input type="date" id="submitdate" placeholder="Submit Date" [(ngModel)]="newQuote.dateComplete">
+    <input type="date" id="submitdate" placeholder="Submit Date" [(ngModel)]="newQuote.dateComplete" [ngModelOptions]="{standalone: true}">
     <br>
     <br>
     <br>

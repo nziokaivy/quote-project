@@ -29,12 +29,8 @@
 ##### If you have any issues feel free to contact me at nziokaivy@gmail.com
 
 ## License
+
 ##### MIT License. Copyright (c) 2018 Ivy Nzioka  
-
-
-
-
-
 
 
 ## Code scaffolding

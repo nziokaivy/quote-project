@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Quote } from '../quotes';
+import { DateCountPipe } from '../date-count.pipe';
 
 
 @Component({
@@ -14,9 +15,9 @@ export class QuoteComponent implements OnInit {
   } 
   
   quotes = [
-    new Quote(1, "lorem ipsum is real", "Ivy", "Dami", new Date(2011, 3, 4)),
-    new Quote(2, "lorem ipsum is no lie", "Ivy", "Dami", new Date(2012, 3, 4)),
-    new Quote(3, "lorem ipsum is lit", "Ivy", "Dami", new Date(2013, 3, 4)),
+    new Quote(1, "lorem ipsum is real", "Ivy", "Dami", new Date(2020, 3, 4)),
+    new Quote(2, "lorem ipsum is no lie", "Ivy", "Dami", new Date(2021, 3, 4)),
+    new Quote(3, "lorem ipsum is lit", "Ivy", "Dami", new Date(2023, 3, 4)),
   ]
 
   showDescription = false;

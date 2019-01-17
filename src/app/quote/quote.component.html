@@ -14,7 +14,7 @@
       </div>
       
       <div *ngIf="showDescription">
-          <p>{{quote.completeDate|date}} days ago, Submittted By {{quote.submitter}}</p>
+        <p>{{quote.completeDate|dateCount}} days ago, Submittted By {{quote.submitter}}</p>
         </div>
       <div *ngIf="showDescription">
         <app-quote-details [quote]='quote' (isComplete)='deleteQuote($event,i)'></app-quote-details>

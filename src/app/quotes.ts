@@ -10,8 +10,7 @@ export class Quote {
     public quote: string,
     public author: string,
     public submitter: string,
-    public dateComplete: Date) {
-
-    }
+    public completeDate: Date) 
+    {}
     
 }
